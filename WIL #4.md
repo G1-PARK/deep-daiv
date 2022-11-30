@@ -6,11 +6,13 @@
 
 2018년 Google이 발표한 자연어처리 모델 BERT의 hyperparameters를 조정하여 성능을 높이는 방법
 
-BERT-large와 아키텍처 및 데이터셋이 동일하게 구성되었으며, 논문은 주로 hyperparameters 변경 후 성능확인을 반복하는 실험 내용으로 구성
+![image](https://user-images.githubusercontent.com/83004338/204748332-288f1aa8-ba88-4cc7-85e4-badd5025fef3.png)
+
+BERT-large와 아키텍처 및 데이터셋이 동일하게 구성됨. (12 Encoder / 12 Attention / 768 Hidden state) 논문은 주로 hyperparameters 변경 후 성능확인을 반복하는 실험 내용으로 구성
 
 <br/>
 
-**| 실험 내용**
+### 실험 내용
 
 **1. Dynamic Masking**
 
@@ -40,7 +42,7 @@ RoBERTa - 전처리 없이 50K 크기의 byte-level BPE tokenizer 사용 (GPT-2)
 
 <br>
 
-**| 실험 결과**
+### 실험 결과
 
 상기 내용으로 모델 pre-train 후 GLuE, SQuAD, RACE 데이터로 성능 확인
 
@@ -64,3 +66,7 @@ data augmentation이 이루어지지 않은 경우 SOTA 달성
 
 <img width="235" alt="image" src="https://user-images.githubusercontent.com/83004338/204745241-a488b15c-8f87-4c0c-af92-07b9c4cf8566.png">
 
+
+<br/>
+
+출처: https://huggingface.co/docs/transformers/model_doc/roberta
